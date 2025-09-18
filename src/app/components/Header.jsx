@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import NavLink from "./NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
-import Image from "next/image";
 
 const navLinks = [
   {
@@ -26,17 +25,16 @@ const navLinks = [
 ];
 
 
-const Navbar = () => {
+export default function Header() {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-10 bg-tertiary bg-opacity-90 h-20 flex items-center justify-between px-4">
-      <div className="flex items-center">
+    <nav className="fixed top-0 left-0 right-0 z-10 bg-primary bg-opacity-90 h-20 flex items-center justify-between px-4">
+      <div className="flex items-center text-center">
         <Link href="/" className="text-2xl md:text-4xl text-text-primary font-semibold" style={{ textDecoration: 'none' }}>
           PORTFOLIO
         </Link>
       </div>
-      {/* Desktop Nav */}
       <ul className="hidden md:flex space-x-8">
         {navLinks.map((link, index) => (
           <li key={index}>
@@ -44,7 +42,6 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-      {/* Hamburger Button */}
       <button
         className="md:hidden flex items-center px-3 py-2 border rounded border-black text-slate-600 hover:text-black hover:border-black"
         onClick={() => setNavbarOpen(!navbarOpen)}
@@ -52,12 +49,9 @@ const Navbar = () => {
       >
         {navbarOpen ? <XMarkIcon className="h-5 w-5" /> : <Bars3Icon className="h-5 w-5" />}
       </button>
-      {/* Mobile Overlay */}
       {navbarOpen && (
         <MenuOverlay links={navLinks} />
       )}
     </nav>
   );
 };
-
-export default Navbar;
