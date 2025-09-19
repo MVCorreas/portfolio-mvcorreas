@@ -1,38 +1,34 @@
 import Image from "next/image";
+import Header from "./Header";
 
-export default function HeroSection() {
-  return (
-    <section className="relative bg-primary top-12 p-8 rounded-xl min-h-[800px] flex items-center justify-center overflow-hidden">
-      {/* Top Left Image */}
-      <Image
-        src="/yellow-flowers.jpg"
-        alt="Yellow flowers"
-        width={460}
-        height={460}
-        className="absolute bottom-120 left-4 rounded-4xl shadow-2xl md:bottom-124 sm:bottom-124"
-      />
-      {/* Top Right Image */}
-      <Image
-        src="/yellow-desktop.jpg"
-        alt="Yellow desktop"
-        width={300}
-        height={600}
-        className="absolute top-16 right-0 rounded-4xl shadow-2xl md:right-[-48px] sm:right-[-124px]"
-      />
-      {/* Bottom Left Image */}
-      <Image
-        src="/yellow-keyboard.jpg"
-        alt="Yellow keyboard"
-        width={280}
-        height={280}
-        className="absolute lg:top-64 lg:left-12 rounded-4xl shadow-2xl sm:top-124 sm:left-72"
-      />
-      <div className="relative z-10 text-center">
-        <h1 className="text-6xl font-extrabold mb-4 text-black">
-          MARIA VICTORIA CORREAS
-        </h1>
-        <p className="text-3xl text-black">Full Stack Developer</p>
-      </div>
-    </section>
-  );
+export default function HeroSection({ children }) {
+    return (
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden p-4 md:p-12">
+            {/* Background Image */}
+            <Image
+                src="/black-desktop.jpg"
+                alt="Background"
+                fill
+                className="object-cover opacity-80 absolute inset-0 -z-10"
+                priority
+            />
+            {/* Main Box */}
+            <div className="relative bg-black text-white rounded-xl shadow-xl p-8 w-full max-w-8xl">
+                {/* Header Menu */}
+              <Header />
+                {/* Main Image and Content */}
+                <div className="max-w-full">
+                    <Image
+                        src="/black-desktop.jpg"
+                        alt="Main"
+                        width={1200}
+                        height={600}
+                        className="rounded-lg mx-auto mb-8 w-full h-auto max-h-[600px] object-cover"
+                    />
+                   <h1 className="text-4xl font-extralight mb-4 text-center">Code with vision. Create with impact.</h1>
+                </div>
+            </div>
+        </section>
+    );
 }
+
