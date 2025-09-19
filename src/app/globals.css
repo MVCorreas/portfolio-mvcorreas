@@ -4,7 +4,7 @@
   /* custom colours */
   --color-primary: #FFEDA8;
   --color-secondary: #FAE588;
-  --color-tertiary: #F9DC5C;
+  --color-tertiary: oklch(92.4% 0.13 95.746);
 
    /* custom text color */
   --color-text-primary: oklch(12.9% 0.042 264.695);
