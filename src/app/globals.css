@@ -10,7 +10,3 @@
   --color-text-primary: oklch(12.9% 0.042 264.695);
   --color-text-secondary: oklch(27.9% 0.041 260.031);
 }
-
-body {
-  background-color: var(--color-primary);
-}
