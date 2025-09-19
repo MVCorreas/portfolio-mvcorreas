@@ -24,21 +24,20 @@ const navLinks = [
   },
 ];
 
-
 export default function Header() {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-10 bg-primary bg-opacity-90 h-20 flex items-center justify-between px-4">
-      <div className="flex items-center text-center">
-        <Link href="/" className="text-2xl md:text-4xl text-text-primary font-semibold" style={{ textDecoration: 'none' }}>
-          PORTFOLIO
-        </Link>
-      </div>
+    <nav className="flex justify-between items-center mb-6">
+      <span className="font-light text-2xl">Maria V Correas</span>
       <ul className="hidden md:flex space-x-8">
         {navLinks.map((link, index) => (
           <li key={index}>
-            <NavLink href={link.path} title={link.title} />
+            <NavLink
+              href={link.path}
+              title={link.title}
+              className="transition-colors duration-200"
+            />
           </li>
         ))}
       </ul>
@@ -47,11 +46,13 @@ export default function Header() {
         onClick={() => setNavbarOpen(!navbarOpen)}
         aria-label="Toggle menu"
       >
-        {navbarOpen ? <XMarkIcon className="h-5 w-5" /> : <Bars3Icon className="h-5 w-5" />}
+        {navbarOpen ? (
+          <XMarkIcon className="h-10 w-10" />
+        ) : (
+          <Bars3Icon className="h-10 w-10" />
+        )}
       </button>
-      {navbarOpen && (
-        <MenuOverlay links={navLinks} />
-      )}
+      {navbarOpen && <MenuOverlay links={navLinks} />}
     </nav>
   );
-};
+}

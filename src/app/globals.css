@@ -2,9 +2,8 @@
 
 @theme {
   /* custom colours */
-  --color-primary: #FFEDA8;
-  --color-secondary: #FAE588;
-  --color-tertiary: oklch(92.4% 0.13 95.746);
+  --color-primary: #74070E;
+  --color-secondary: oklch(80.8% 0.114 19.571);
 
    /* custom text color */
   --color-text-primary: oklch(12.9% 0.042 264.695);
