@@ -2,6 +2,7 @@
 import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
+import { motion } from "framer-motion";
 
 const TAB_DATA = [
   {
@@ -57,15 +58,23 @@ export default function AboutSection() {
   };
 
   return (
-    <section className="text-text-secondary" id="about">
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      viewport={{ once: true, amount: 0.5 }}
+      className="text-text-secondary"
+      id="about"
+    >
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <div className="w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative border-8 border-tertiary rounded-full">
+        <div className="w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
           <Image
             src="/IMG_1514.jpg"
             alt="aboutImage"
             width={500}
             height={500}
-            className="rounded-full absolute"
+            className="rounded-2xl absolute"
           />
         </div>
         <div className="mt-4 md:mt-0 flex flex-col h-full">
@@ -109,7 +118,6 @@ export default function AboutSection() {
           </div>
         </div>
       </div>
-    </section>
-
+    </motion.section>
   );
 }

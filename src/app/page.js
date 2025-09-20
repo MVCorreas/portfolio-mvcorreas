@@ -9,7 +9,7 @@ export default function Home() {
     <div className="relative min-h-screen overflow-hidden">
       <div className="relative min-h-screen flex items-center justify-center overflow-hidden p-4 md:p-12">
         <Image
-          src="/black-desktop.jpg"
+          src="/red-keyboard.jpg"
           alt="Background"
           fill
           className="object-cover opacity-80 absolute inset-0 -z-10"
