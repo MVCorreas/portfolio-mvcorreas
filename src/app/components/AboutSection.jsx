@@ -69,7 +69,7 @@ export default function AboutSection() {
           />
         </div>
         <div className="mt-4 md:mt-0 flex flex-col h-full">
-          <h2 className="text-4xl text-center text-text-primary bg-tertiary rounded-2xl mb-4 p-4">
+          <h2 className="text-4xl text-left text-secondary font-extralight mb-4">
             About Me
           </h2>
           <p className="text-base lg:text-lg">
