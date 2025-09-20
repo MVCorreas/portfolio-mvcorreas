@@ -8,7 +8,7 @@ const variants = {
 };
 
 const TabButton = ({ active, selectTab, children }) => {
-  const buttonClasses = active ? "text-primary" : "text-secondary"; // Adjust classes for active and inactive tabs
+  const buttonClasses = active ? "text-secondary" : "text-tertiary"; // Adjust classes for active and inactive tabs
   const underlineClasses = active ? "h-1 bg-primary mt-2" : "h-1 bg-transparent mt-2"; // Adjust classes for active and inactive tabs
 
   return (

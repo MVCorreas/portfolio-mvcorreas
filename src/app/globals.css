@@ -4,8 +4,9 @@
   /* custom colours */
   --color-primary: #74070E;
   --color-secondary: oklch(80.8% 0.114 19.571);
+  --color-tertiary: oklch(89.2% 0.058 10.001);
 
    /* custom text color */
-  --color-text-primary: oklch(12.9% 0.042 264.695);
-  --color-text-secondary: oklch(27.9% 0.041 260.031);
+  --color-text-primary: oklch(98.5% 0 0);
+  --color-text-secondary: oklch(92.2% 0 0);
 }

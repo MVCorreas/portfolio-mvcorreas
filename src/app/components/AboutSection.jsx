@@ -68,12 +68,12 @@ export default function AboutSection() {
       id="about"
     >
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <div className="w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
+        <div className="w-[350px] h-[350px] lg:w-[500px] lg:h-[500px] relative">
           <Image
-            src="/IMG_1514.jpg"
+            src="/IMG_4866.jpg"
             alt="aboutImage"
-            width={500}
-            height={500}
+            width={600}
+            height={600}
             className="rounded-2xl absolute"
           />
         </div>
@@ -81,7 +81,7 @@ export default function AboutSection() {
           <h2 className="text-4xl text-left text-secondary font-extralight mb-4">
             About Me
           </h2>
-          <p className="text-base lg:text-lg">
+          <p className="text-text-secondary lg:text-lg">
             I am a driven Full Stack Developer with a unique blend of language
             expertise and coding proficiency. I am quite astonished at the
             profound impact that technology is exerting on our well-being, and I
