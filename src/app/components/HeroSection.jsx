@@ -20,7 +20,7 @@ export default function HeroSection() {
             className="rounded-lg mx-auto mb-8 w-full h-auto max-h-[600px] object-cover"
           />
        
-        <h1 className="text-4xl font-extralight mb-4 py-8 text-center">
+        <h1 className="text-text-primary text-4xl font-extralight mb-4 py-8 text-center">
           Code with vision. Create with impact.
         </h1>
          </motion.div>

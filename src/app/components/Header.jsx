@@ -29,7 +29,7 @@ export default function Header() {
 
   return (
     <nav className="flex justify-between items-center mb-6">
-      <span className="font-light text-2xl">Maria V Correas</span>
+      <span className="text-text-primary font-light text-2xl">Maria V Correas</span>
       <ul className="hidden md:flex space-x-8">
         {navLinks.map((link, index) => (
           <li key={index}>

@@ -2,11 +2,11 @@
 
 @theme {
   /* custom colours */
-  --color-primary: #74070E;
-  --color-secondary: oklch(80.8% 0.114 19.571);
-  --color-tertiary: oklch(89.2% 0.058 10.001);
+  --color-primary: #75020f;
+  --color-secondary: #51080D; /* #C43E46 */
+  --color-tertiary: oklch(81% 0.117 11.638);
 
    /* custom text color */
-  --color-text-primary: oklch(98.5% 0 0);
+  --color-text-primary: #FFF4E4;
   --color-text-secondary: oklch(92.2% 0 0);
 }

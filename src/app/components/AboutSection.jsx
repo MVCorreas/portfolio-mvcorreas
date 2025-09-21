@@ -3,6 +3,7 @@ import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
 import { motion } from "framer-motion";
+import AnimatedButton from "./AnimatedButton";
 
 const TAB_DATA = [
   {
@@ -78,10 +79,10 @@ export default function AboutSection() {
           />
         </div>
         <div className="mt-4 md:mt-0 flex flex-col h-full">
-          <h2 className="text-4xl text-left text-secondary font-extralight mb-4">
+          <h2 className="text-4xl text-left text-tertiary font-extralight mb-4">
             About Me
           </h2>
-          <p className="text-text-secondary lg:text-lg">
+          <p className="text-text-primary lg:text-lg">
             I am a driven Full Stack Developer with a unique blend of language
             expertise and coding proficiency. I am quite astonished at the
             profound impact that technology is exerting on our well-being, and I
@@ -97,6 +98,7 @@ export default function AboutSection() {
             expertise to the exponential growth in web and mobile development
             for the benefit of our community.
           </p>
+          <AnimatedButton />
           <div className="flex flex-row justify-start mt-8 text-2xl">
             <TabButton
               selectTab={() => handleTabChange("education")}
