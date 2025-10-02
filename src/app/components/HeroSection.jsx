@@ -12,14 +12,7 @@ export default function HeroSection() {
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          <Image
-            src="/red-keyboard.jpg"
-            alt="Main"
-            width={800}
-            height={500}
-            className="rounded-lg mx-auto mb-8 w-full h-auto max-h-[600px] object-cover"
-          />
-       
+      
         <h1 className="text-text-primary text-4xl font-extralight mb-4 py-8 text-center">
           Code with vision. Create with impact.
         </h1>

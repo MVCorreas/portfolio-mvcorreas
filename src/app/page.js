@@ -9,17 +9,24 @@ export default function Home() {
     <div className="relative min-h-screen overflow-hidden">
       <div className="relative min-h-screen flex items-center justify-center overflow-hidden p-4 md:p-12">
         <Image
-          src="/red-keyboard.jpg"
+          src="/light-bg.jpg"
           alt="Background"
           fill
-          className="object-cover opacity-80 absolute inset-0 -z-10"
+          className="object-cover opacity-40 absolute inset-0 -z-10"
           priority
         />
-        <div
-          className="relative bg-black text-white rounded-xl shadow-xl w-full max-w-8xl flex flex-col"
-          style={{ height: "90vh" }}
-        >
-          <div className="sticky top-4 z-10 px-8 pt-4 bg-black rounded-t-xl">
+      
+
+        <div className="relative opacity-120 max-w-[80vw] w-full h-[85vh] md:h-[90vh] lg:h-[85vh] shadow-xl rounded-2xl flex flex-col">
+           <Image
+          src="/pink-desktop.jpg"
+          alt="Background"
+          fill
+          className="object-cover opacity-40 absolute inset-0 -z-10"
+          priority
+        />
+        <div className="absolute inset-0 bg-black/40 -z-5 rounded-2xl"></div>
+          <div className="sticky top-4 z-10 px-8 pt-4  rounded-t-xl">
             <Header />
           </div>
           <div className="flex-1 overflow-y-auto p-4 md:p-8">
